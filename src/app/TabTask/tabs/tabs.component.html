@@ -1,0 +1,71 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class=" nav nav-pills">
+                <li class="nav-item">
+                    <a href="javascript:;"
+                    (click)="onskillchange('Node')"
+                    [ngClass]="{
+                        active:selectedSkills.includes('Node')
+                    }" 
+                    class="nav-link">Node</a>
+                </li>
+  
+                <li class="nav-item">
+                    <a href="javascript:;" 
+                    (click)="onskillchange('JavaScript')"
+                    [ngClass]="{
+                        active:selectedSkills.includes('JavaScript')
+                    }"
+                    class="nav-link">JavaScript</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="javascript:;" 
+                    (click)="onskillchange('Angular')"
+                   [ngClass]="{
+                     active:selectedSkills.includes('Angular')
+                   }"
+                    class="nav-link">Angular</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="javascript:;" 
+                    (click)="onskillchange('MongoDB')"
+                    [ngClass]="{
+                        active:selectedSkills.includes('MongoDB')
+                    }"
+                    class="nav-link">MongoDB</a>
+                </li>
+            </ul>
+            <hr>
+            <div class="tab-Content">
+                <div class="card my-3 content-box">
+                    <div *ngIf="selectedSkills.includes('Node')" class="card-body">
+                        <strong>Node</strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+                        voluptatem possimus facilis nulla, maiores eveniet? Et atque aspernatur temporibus eveniet,
+                        maiores culpa ad.
+                    </div>
+
+                    <div *ngIf="selectedSkills.includes('JavaScript')" class="card-body">
+                        <strong>JavaScript</strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+                        voluptatem possimus facilis nulla, maiores eveniet? Et atque aspernatur temporibus eveniet,
+                        maiores culpa ad.
+                    </div>
+
+                    <div *ngIf="selectedSkills.includes('Angular')" class="card-body">
+                        <strong>Angular</strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+                        voluptatem possimus facilis nulla, maiores eveniet? Et atque aspernatur temporibus eveniet,
+                        maiores culpa ad.
+                    </div>
+
+                    <div *ngIf="selectedSkills.includes('MongoDB')" class="card-body">
+                        <strong>MongoDB</strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+                        voluptatem possimus facilis nulla, maiores eveniet? Et atque aspernatur temporibus eveniet,
+                        maiores culpa ad.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
